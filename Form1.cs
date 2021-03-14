@@ -46,6 +46,7 @@ namespace WindowsFormsApp5
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             int number = int.Parse(textBox1.Text);
             if (radioButton1.Checked)
             {
@@ -56,7 +57,9 @@ namespace WindowsFormsApp5
                 }
                 if (radioButton6.Checked)
                 {
-                 
+                    string binary = textBox1.Text;
+                    int integer = Convert.ToInt32(binary, 2);
+                    textBox2.Text = Convert.ToString(integer, 8);
 
                 }
                 if (radioButton7.Checked)
@@ -76,14 +79,18 @@ namespace WindowsFormsApp5
                 }
                 if (radioButton8.Checked)
                 {
-
+                    string binary = textBox1.Text;
+                    int integer = Convert.ToInt32(binary, 2);
+                    textBox2.Text = Convert.ToString(integer, 16);
                 }
             }
             if (radioButton2.Checked)
             {
                 if (radioButton5.Checked)
                 {
-
+                    string binary = textBox1.Text;
+                    int integer = Convert.ToInt32(binary, 8);
+                    textBox2.Text = Convert.ToString(integer, 2);
                 }
                 if (radioButton6.Checked)
                 {
@@ -91,11 +98,15 @@ namespace WindowsFormsApp5
                 }
                 if (radioButton7.Checked)
                 {
-
+                    string binary = textBox1.Text;
+                    int integer = Convert.ToInt32(binary, 8);
+                    textBox2.Text = Convert.ToString(integer, 10);
                 }
                 if (radioButton8.Checked)
                 {
-
+                    string binary = textBox1.Text;
+                    int integer = Convert.ToInt32(binary, 8);
+                    textBox2.Text = Convert.ToString(integer, 16);
                 }
             }
             if (radioButton3.Checked)
@@ -118,7 +129,9 @@ namespace WindowsFormsApp5
                 }
                 if (radioButton6.Checked)
                 {
-
+                    string binary = textBox1.Text;
+                    int integer = Convert.ToInt32(binary, 10);
+                    textBox2.Text = Convert.ToString(integer, 8);
                 }
                 if (radioButton7.Checked)
                 {
@@ -126,22 +139,30 @@ namespace WindowsFormsApp5
                 }
                 if (radioButton8.Checked)
                 {
-
+                    string binary = textBox1.Text;
+                    int integer = Convert.ToInt32(binary, 10);
+                    textBox2.Text = Convert.ToString(integer, 16);
                 }
             }
             if (radioButton4.Checked)
             {
                 if (radioButton5.Checked)
                 {
-
+                    string binary = textBox1.Text;
+                    int integer = Convert.ToInt32(binary, 16);
+                    textBox2.Text = Convert.ToString(integer, 2);
                 }
                 if (radioButton6.Checked)
                 {
-
+                    string binary = textBox1.Text;
+                    int integer = Convert.ToInt32(binary, 16);
+                    textBox2.Text = Convert.ToString(integer, 8);
                 }
                 if (radioButton7.Checked)
                 {
-
+                    string binary = textBox1.Text;
+                    int integer = Convert.ToInt32(binary, 16);
+                    textBox2.Text = Convert.ToString(integer, 10);
                 }
                 if (radioButton8.Checked)
                 {
